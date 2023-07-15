@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\QuranController;
+use App\Http\Controllers\ChatbotController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,9 +15,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-// Route::get('/', function () {
-//     return view('welcome');
-// });
+// chatbot
+Route::post('send', [ChatbotController::class, 'sendChat']);
+Route::get('ustadz-robot', function () {
+    return view('chatbot');
+});
 
-Route::get('quran', [QuranController::class, 'index']);
-Route::get('quran/{id}', [QuranController::class, 'indexId']);
+Route::get('/', [QuranController::class, 'index']);
+Route::get('surat/{id}', [QuranController::class, 'indexId']);
+

@@ -3,7 +3,7 @@
 <head>
     @include('/component/header')
 </head>
-<body>
+<body class="bg-dark text-white ">
 
     @include('/component/navbar')
     <section class="content">
@@ -12,5 +12,6 @@
         </div><!-- /.container-fluid -->
     </section>
 
+    @include('/component/footer')
 </body>
 </html>
