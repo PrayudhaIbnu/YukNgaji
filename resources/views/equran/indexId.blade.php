@@ -1,10 +1,20 @@
 @extends('component/app')
 
-@section('content')
-
-<h1 class="text-center bg-warning bg-opacity-25 p-3 rounded-top rounded-circle border-5
-
-r border-bottom border-warning" style="font-family: 'Noto Sans Indic Siyaq Numbers', sans-serif; color: rgb(253, 219, 173)" >بِسْمِ اللّٰهِ الرَّحْمٰنِ الرَّحِيْمِ</h1>
+<body class="bg-dark">
+    @section('content')
+<h1 class="
+        text-center
+        bg-warning
+        bg-opacity-25
+        p-3
+        rounded-top
+        rounded-circle
+        border-5
+        border-bottom
+        border-warning"
+    style="
+        font-family: 'Noto Sans Indic Siyaq Numbers', sans-serif; color:
+        rgb(253, 219, 173)">بِسْمِ اللّٰهِ الرَّحْمٰنِ الرَّحِيْمِ</h1>
 
 <table class="table table-striped align-middle mb-0 mt-2 table-dark">
     <thead>
@@ -19,7 +29,7 @@ r border-bottom border-warning" style="font-family: 'Noto Sans Indic Siyaq Numbe
         @foreach($response->ayat as $surat)
         <audio id="myAudio">
             {{-- <source src="horse.ogg" type="audio/ogg"> --}}
-            <source src="{{ $surat['audio'] }}" type="audio/mpeg">
+            {{-- <source src="{{ $surat['audio'] }}" type="audio/mpeg"> --}}
             Your browser does not support the audio element.
         </audio>
 
@@ -38,3 +48,4 @@ r border-bottom border-warning" style="font-family: 'Noto Sans Indic Siyaq Numbe
   </table>
 
 @endsection
+</body>

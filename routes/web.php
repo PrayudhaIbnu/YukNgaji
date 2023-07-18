@@ -16,11 +16,15 @@ use Illuminate\Support\Facades\Route;
 */
 
 // chatbot
+Route::get('/', function () {
+    return view('welcome');
+});
+
 Route::post('send', [ChatbotController::class, 'sendChat']);
 Route::get('ustadz-robot', function () {
     return view('chatbot');
 });
 
-Route::get('/', [QuranController::class, 'index']);
+Route::get('index', [QuranController::class, 'index']);
 Route::get('surat/{id}', [QuranController::class, 'indexId']);
 

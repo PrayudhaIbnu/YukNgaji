@@ -11,7 +11,7 @@ class QuranController extends Controller
     public function index()
     {
         $response = Http::get('https://equran.id/api/v2/surat');
-        return view('index', [
+        return view('equran/index', [
             'response'=>json_decode($response)
         ]);
     }
@@ -19,7 +19,7 @@ class QuranController extends Controller
     public function indexId($id)
     {
         $response = Http::get("https://equran.id/api/surat/$id");
-        return view('indexId', [
+        return view('equran/indexId', [
             'response'=>json_decode($response)
         ]);
 

@@ -24,8 +24,8 @@
                 <p class="fw-bolder" style="color: #90a7a7;">Tetap gunakan bahasa yang mudah di pahami ya...</p>
             </div>
         </div>
-        <div class="container-fluid w-100 px-3 py-2 d-flex sticky-bottom" style="height: 64px;">
-            <input id="input" type="text" name="input" class="form-control mt-1 text-light border-2 border-success" style="background-color: #323537;">&nbsp;&nbsp;
+        <div class="container-fluid w-100 px-3 py-2 d-flex sticky-bottom" style="height: 64px; background-color:#373b3e">
+            <input id="input" type="text" name="input" class="form-control mt-1 text-light border-2 border-success rounded-pill" style="background-color: #323537;">&nbsp;&nbsp;
             <button for="index" id="submit" onclick="submit()" type="submit"  class="btn btn-success rounded-circle mt-1"><i class="fa-solid fa-paper-plane"></i></button>
         </div>
     </div>

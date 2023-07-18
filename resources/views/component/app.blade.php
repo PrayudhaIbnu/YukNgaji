@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    @include('/component/header')
+    @include('/component/header2')
 </head>
-<body class="bg-dark text-white ">
+<body>
 
     @include('/component/navbar')
     <section class="content">
