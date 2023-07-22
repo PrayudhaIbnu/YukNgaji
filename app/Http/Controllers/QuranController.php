@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Http;
+use PhpParser\Node\Expr\FuncCall;
 
 class QuranController extends Controller
 {
@@ -19,12 +20,19 @@ class QuranController extends Controller
     public function indexId($id)
     {
         $response = Http::get("https://equran.id/api/surat/$id");
-        return view('equran/indexId', [
+        return view('equran/surat', [
             'response'=>json_decode($response)
         ]);
 
     }
 
+    // public function indexId2($id)
+    // {
+    //     $response = Http::get("https://equran.id/api/tafsir/$id");
+    //     return view('equran/tafsir', [
+    //         'response'=>json_decode($response)
+    //     ]);
+    // }
 
 
         // public function Cari(Request $request)

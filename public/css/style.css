@@ -1,6 +1,4 @@
-.navbar {
-    /* background-image: linear-gradient(to top left, #ffc107, #f8f9fa, #212529) */
-}
+
 
 .pagination {
     background-color: #212529;
@@ -8,6 +6,10 @@
 
 .light {
     background: #f3f5f7;
+}
+
+.green{
+    color: #79dd09;
 }
 
 a,

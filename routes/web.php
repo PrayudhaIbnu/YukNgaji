@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\QuranController;
 use App\Http\Controllers\ChatbotController;
+use App\Http\Controllers\JadwalSholatController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -24,7 +25,13 @@ Route::post('send', [ChatbotController::class, 'sendChat']);
 Route::get('ustadz-robot', function () {
     return view('chatbot');
 });
+// chatbot end
 
-Route::get('index', [QuranController::class, 'index']);
+// equran
+Route::get('E-quran', [QuranController::class, 'index']);
 Route::get('surat/{id}', [QuranController::class, 'indexId']);
+Route::get('tafsir/{id}', [QuranController::class, 'indexId2']);
+// equran end
 
+// jadwal sholat
+// Route::get('JadwalSholat', [JadwalSholatController::class, 'index']);
