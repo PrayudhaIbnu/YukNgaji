@@ -60,7 +60,7 @@
                     </h2>
                     <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                         <div class="accordion-body">
-                            {{ $surat->deskripsi }}
+
                         </div>
                     </div>
                 </div>
